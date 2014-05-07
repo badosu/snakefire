@@ -128,18 +128,21 @@ All *XFCE* users should install GNOME keyring.
 
 #### Notifications ####
 
-For *Ubuntu/Debian based* systems, python-notify is in the official repositores, and can be
-installed the following way:
+Bindings for libnotify and dbus are required to check availability
+and send native notifications, packages are available on the
+official repositories.
 
-        $ sudo apt-get install python-notify
+For *Ubuntu/Debian based* systems:
 
-For *Fedora*, python's libnotify is in the official repositories, and can be installed with:
+        $ sudo apt-get install python-notify python-dbus
 
-        $ yum install notify-python
+For *Fedora*:
 
-For *Arch Linux*, python-notify is in the extra repository, and can be installed with:
+        $ yum install notify-python dbus-python
 
-        $ pacman -S python-notify
+For *Arch Linux*, python-notify is in the extra repository:
+
+        $ pacman -S python2-notify python2-dbus
 
 #### Spell checking ####
 
